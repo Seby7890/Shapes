@@ -7,11 +7,6 @@ public class Rectangle {
         this.width = width;
     }
 
-    public double computeArea() {
-        double area = height * width;
-        return area;
-    }
-
     public double getHeight() {
         return height;
     }
@@ -26,5 +21,10 @@ public class Rectangle {
 
     public void setWidth(double width) {
         this.width = width;
+    }
+
+    public double computeArea() {
+        double area = height * width;
+        return area;
     }
 }
