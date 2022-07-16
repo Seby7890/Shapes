@@ -5,5 +5,7 @@ public class Canvas {
 
         System.out.println("Circle area is: " + circle.computeArea());
         System.out.println("Rectangle area is: " + rectangle.computeArea());
+        circle.resize(30);
+        System.out.println(circle.getRadius());
     }
 }

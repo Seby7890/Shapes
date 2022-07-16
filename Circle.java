@@ -1,4 +1,4 @@
-public class Circle implements Shape {
+public class Circle implements Shape, Resizable {
     private double radius;
 
     Circle(double radius) {
@@ -16,5 +16,10 @@ public class Circle implements Shape {
     public double computeArea() {
         double area = radius * radius * Math.PI;
         return area;
+    }
+
+    @Override
+    public void resize(double percent) {
+        radius = radius * (percent / 100);
     }
 }
